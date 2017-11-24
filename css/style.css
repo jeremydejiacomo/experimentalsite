@@ -323,7 +323,7 @@ button:hover {
               display: block;
           }
 
-		/* .heroText {
+		.heroText {
 				text-align: center;
 				vertical-align: middle;
 				display: block;
@@ -352,25 +352,6 @@ button:hover {
 				text-align: center;
 				position: relative;
 				top: 5em;
-			} */
-
-			.hero:focus {
-				  box-shadow: 0px 4px 10px 4px #e6e6e6;
-				  transition: all 0.3s ease-in-out;
-				  transform: scale(1.01, 1.01);
-			}
-
-			.hero:focus .heroText {
-				opacity: 1;
-			}
-
-			.hero:after {
-				  box-shadow: 0px 4px 10px 4px #e6e6e6;
-				  transition: opacity 0.3s ease-in-out;
-			}
-
-			.hero:hover::after {
-			    opacity: 1;
 			}
 			      
       }
