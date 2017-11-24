@@ -169,22 +169,22 @@ button:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-.hero:hover {
+.hero:hover, .hero:active {
 	  box-shadow: 0px 4px 10px 4px #e6e6e6;
 	  transition: all 0.3s ease-in-out;
 	  transform: scale(1.01, 1.01);
 }
 
-.hero:hover .heroText {
+.hero:hover .heroText, .hero:active .heroText {
 	opacity: 1;
 }
 
-.hero:after {
+.hero:after, .hero:active {
 	  box-shadow: 0px 4px 10px 4px #e6e6e6;
 	  transition: opacity 0.3s ease-in-out;
 }
 
-.hero:hover::after {
+.hero:hover::after, .hero:active::after {
     opacity: 1;
 }
 
