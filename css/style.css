@@ -115,15 +115,8 @@ button:hover {
 	color: #fff;
 }
 
-.pure-button {
-	margin-bottom: 1em;
-}
-
-.pure-button-primary {
-	position: relative;
-    bottom: -1em;
-    vertical-align: center;
-    background-color: #1a53ff;
+.floatRight {
+	float: right;
 }
 
 .copy {
@@ -176,6 +169,27 @@ button:hover {
 	text-align: center;
 	position: relative;
 	top: 5em;
+}
+
+/* pure-css class changes */
+.pure-button {
+	margin-bottom: 1em;
+}
+
+.pure-button-primary {
+	position: relative;
+    margin-top: 1em;
+    vertical-align: center;
+    background-color: #1a53ff;
+}
+
+.pure-button-disabled {
+    margin-top: 1em;
+    border: 1px solid #d9d9d9;
+}
+
+.pure-form-stacked input[type=email] {
+	margin: .75em 0em;
 }
 
 /* class additions for section pages */
