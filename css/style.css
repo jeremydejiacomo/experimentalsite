@@ -29,7 +29,7 @@ li {
 	display: inline;
 }
 
-body {
+h1, h2, h3, p {
 	font-family: Roboto;
 }
 
@@ -115,32 +115,38 @@ button:hover {
 	color: #fff;
 }
 
+.pure-button {
+	margin-bottom: 1em;
+}
+
+.pure-button-primary {
+	position: relative;
+    bottom: -1em;
+    vertical-align: center;
+    background-color: #1a53ff;
+}
+
+.copy {
+	min-height: 5em;
+	margin: 1em 2em;
+}
+
+.image {
+	background-color: #ff8080;
+	min-height: 12em;
+}
+
 .card {
 	border: 1px solid #e6e6e6;
 	background-color: #fff;
 	border-radius: 8px;
 	display: inline-block;
 	min-height: 25em;
-	padding: 1em 1em;
+	padding: 1.3em 1.3em;
 	box-sizing: border-box;
 	margin: 2em 1em;
 	box-shadow: 0px 2px 4px 2px #f2f2f2;
 	transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: all 0.3s ease-in-out;
-	  transform: scale(1.02, 1.02);
-}
-
-.card:after {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: opacity 0.3s ease-in-out;
-}
-
-.card:hover::after {
-    opacity: 1;
 }
 
 .heroText {
@@ -169,6 +175,22 @@ button:hover {
 	transition: all 0.3s ease-in-out;
 }
 
+/* card hover effects */
+.card:hover {
+	  box-shadow: 0px 4px 10px 4px #e6e6e6;
+	  transition: all 0.3s ease-in-out;
+	  transform: scale(1.02, 1.02);
+}
+
+.card:after {
+	  box-shadow: 0px 4px 10px 4px #e6e6e6;
+	  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
 .hero:hover {
 	  box-shadow: 0px 4px 10px 4px #e6e6e6;
 	  transition: all 0.3s ease-in-out;
@@ -194,6 +216,7 @@ button:hover {
 	top: 5em;
 }
 
+/* class additions for section pages */
 .theCause {
 	background-image: url(../images/the-cause.png);
 }
@@ -206,28 +229,8 @@ button:hover {
 	background-image: url(../images/mantra.png);
 }
 
-.pure-button {
-	margin-bottom: 1em;
-}
 
-.pure-button-primary {
-	position: relative;
-    bottom: -1em;
-    vertical-align: center;
-    background-color: #1a53ff;
-}
-
-.copy {
-	min-height: 5em;
-	margin: 1em 2em;
-}
-
-.image {
-	background-color: #ff8080;
-	min-height: 12em;
-}
-
-/* menu css */
+/* responsive menu css */
       .custom-wrapper {
           background-color: #0039e6;
           margin-bottom: 0;
@@ -308,13 +311,14 @@ button:hover {
 
       .pure-menu-link {
 		font-weight: 400;
+		font-family: Roboto;
 		font-size: 1em;
 		color: #fff;
 		}
 
 /* media queries */
       @media (max-width: 47.999em) {
-
+		/* changes to nav menu element for mobile */
           .custom-menu-3 {
               text-align: left;
           }
@@ -322,24 +326,27 @@ button:hover {
           .custom-toggle {
               display: block;
           }
-
-          .hero:focus {
+		
+		/* changes to hero card for mobile */
+          .hero:active, .hero:focus {
 			  box-shadow: 0px 4px 10px 4px #e6e6e6;
 			  transition: all 0.3s ease-in-out;
 			  transform: scale(1.01, 1.01);
 			}
 
-			.hero:focus .heroText {
+			.hero:active .heroText, .hero:focus .heroText {
 				opacity: 1;
 			}
 
-			.hero:focus::after {
+			.hero:active::after, .hero:focus::after {
 			    opacity: 1;
 			}
 			      
       }
 
+/* changes to elements on small/phone breakpoints */
       @media (max-width: 35.5em) {
+      	
 			h1 {
 				font-size: 1.5em;
 				line-height: 1.5em;
@@ -347,5 +354,9 @@ button:hover {
 			.hero {
 				background-repeat: repeat-y;
 				min-height: 8em;
+			}
+
+			.theCause, .initiatives, .mantra {
+				background-repeat: no-repeat;
 			}
       }
