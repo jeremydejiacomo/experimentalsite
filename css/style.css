@@ -184,12 +184,17 @@ button:hover {
 }
 
 .pure-button-disabled {
-    margin-top: 1em;
     border: 1px solid #d9d9d9;
+    margin-top: .75em;
 }
 
-.pure-form-stacked input[type=email] {
-	margin: .75em 0em;
+.pure-form {
+	margin: 1em 2em;
+}
+
+.pure-form input {
+	margin-top: .75em;
+	margin-right:  .75em;
 }
 
 /* class additions for section pages */
