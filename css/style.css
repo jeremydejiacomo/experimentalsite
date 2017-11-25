@@ -170,6 +170,7 @@ button:hover {
 /* pure-css class changes */
 .pure-button {
 	margin-bottom: 1em;
+	font-family: Roboto;
 }
 
 .pure-button-primary {
