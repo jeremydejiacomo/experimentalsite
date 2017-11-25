@@ -176,7 +176,7 @@ button:hover {
 }
 
 /* card hover effects */
-.card:hover {
+.card:hover, .card:active, .card:focus {
 	  box-shadow: 0px 4px 10px 4px #e6e6e6;
 	  transition: all 0.3s ease-in-out;
 	  transform: scale(1.02, 1.02);
@@ -187,17 +187,17 @@ button:hover {
 	  transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover::after {
+.card:hover::after, .card:focus::after, .card:active::after {
     opacity: 1;
 }
 
-.hero:hover {
+.hero:hover, .hero:active, .hero:focus {
 	  box-shadow: 0px 4px 10px 4px #e6e6e6;
 	  transition: all 0.3s ease-in-out;
 	  transform: scale(1.01, 1.01);
 }
 
-.hero:hover .heroText {
+.hero:hover .heroText, .hero:active .heroText, .hero:focus .heroText {
 	opacity: 1;
 }
 
@@ -206,7 +206,7 @@ button:hover {
 	  transition: opacity 0.3s ease-in-out;
 }
 
-.hero:hover::after {
+.hero:hover::after, .hero:active::after, .hero:focus::after {
     opacity: 1;
 }
 
@@ -326,21 +326,6 @@ button:hover {
           .custom-toggle {
               display: block;
           }
-		
-		/* changes to hero card for mobile */
-          .hero:active, .hero:focus {
-			  box-shadow: 0px 4px 10px 4px #e6e6e6;
-			  transition: all 0.3s ease-in-out;
-			  transform: scale(1.01, 1.01);
-			}
-
-			.hero:active .heroText, .hero:focus .heroText {
-				opacity: 1;
-			}
-
-			.hero:active::after, .hero:focus::after {
-			    opacity: 1;
-			}
 			      
       }
 
